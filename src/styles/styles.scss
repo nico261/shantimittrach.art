@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+/* Variables */
+
+// Colors
+
+$background: #f9f2ec;
+$footer-bg: #001233;
+$hover: #ffccff;
+$dfont: #001233;
+$wfont: #fffafa;
+
+
+// Font
+
+$family-primary: 'Times New Roman', Times, serif;
+
+
+/* Basics */
+
+// General
+
+html, body {
+    height: 100%;
+    background-color: $background !important;
+    color: $dfont !important;
+}
+
+.root {
+    display: inline;
+}
+
+.txtb {
+    color: $dfont !important;
+    font-size: 32px;
+}
+
+.txts {
+    color: $dfont !important;
+}
+
+::selection {
+    background-color: $hover;
+    color: $wfont;
+}
+
+
+// Banner
+
+.banner {
+    width: 100%;
+    height: 100vh;
+}
+  
+.banner-img {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+// Header
+
+.header {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    min-height: 52px;
+    z-index: 777;
+    background-color: transparent;
+}
+
+.logo {
+    margin: 0 auto;
+    font-size: 24px;
+    color: $wfont;
+}
+
+.visible {
+    display: flex;
+}
+
+.header + .container-padding {
+    padding-top: 52px;
+}
+
+
+// Footer
+
+.footer {
+    background-color: $footer-bg !important;
+}
+
+.footer-box {
+    text-align: center;
+}
+
+.footer-text {
+    text-decoration: none;
+    color: $wfont;
+}
+
+.footer-text-m {
+    margin-right: 16px;
+}
+
+.footer-text:hover {
+    color: $hover;
+}
+
+.icon-link {
+    text-decoration: none;
+}
+
+.icon-m {
+    margin-right: 16px;
+}
+
+.icon-style {
+    cursor: pointer;
+}
+
+.social-icon {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    color: $wfont;
+}
+
+.social-icon:hover {
+    color: $hover;
+}
+
+
+/* Components */
+
+.title {
+    color: $dfont !important;
+    text-align: center;
+}
+
+
+@import "../../node_modules/bulma/sass/base/_all.sass";
+@import "../../node_modules/bulma/sass/helpers/_all.sass";
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../node_modules/bulma/sass/layout/_all.sass";
+@import "../../node_modules/bulma/sass/grid/_all.sass";
+@import "../../node_modules/bulma/sass/elements/container.sass";
+@import "../../node_modules/bulma/sass/elements/icon.sass";
+@import "../../node_modules/bulma/sass/elements/image.sass";
+@import "../../node_modules/bulma/sass/elements/title.sass";
+
+// @import "../../node_modules/bulma/bulma.sass"; # dev

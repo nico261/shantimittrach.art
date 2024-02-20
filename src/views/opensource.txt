@@ -1,0 +1,5 @@
+Diese Open Source Bibliotheken wurden bei dem erstellen dieser Webseite genutzt.
+
+bulma
+sass
+bootstrap-icons
